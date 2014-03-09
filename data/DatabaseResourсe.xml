@@ -1,0 +1,12 @@
+
+<database>
+<class>resourceSystem.DatabaseResource</class>
+<dialect>org.hibernate.dialect.MySQLDialect</dialect>
+<driver_class>com.mysql.jdbc.Driver</driver_class>
+<url>jdbc:mysql://localhost:3306/game</url>
+<username>root</username>
+<password>12345</password>
+<show_sql>true</show_sql>
+<statement>update</statement>
+
+</database>

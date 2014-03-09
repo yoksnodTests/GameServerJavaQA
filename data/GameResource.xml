@@ -1,0 +1,10 @@
+<game>
+	<class>resourceSystem.GameSessionResource</class>
+	<time>15000</time> 
+	<countGamers>3</countGamers>  
+
+</game>
+
+
+
+
