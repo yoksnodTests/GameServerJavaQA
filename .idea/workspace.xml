@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameServerJavaQA.iml" afterPath="$PROJECT_DIR$/GameServerJavaQA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeoPrj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgSaveResultTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MsgSaveResultTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResultTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="9" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="814" max-vertical-offset="1078">
+            <state line="32" column="49" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.49624062" vertical-offset="0" max-vertical-offset="638">
               <folding />
             </state>
           </provider>
@@ -135,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgSetGamerNamesTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MsgSetGamerNamesTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="5" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.53759396" vertical-offset="0" max-vertical-offset="532">
+            <state line="36" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
               <folding />
             </state>
           </provider>
@@ -238,8 +238,8 @@
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgVictoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java" />
         <option value="$PROJECT_DIR$/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java" />
       </list>
     </option>
   </component>
@@ -1038,12 +1038,12 @@
       <workItem from="1394397516099" duration="7083000" />
       <workItem from="1394404882385" duration="113000" />
       <workItem from="1394404999898" duration="164000" />
-      <workItem from="1394405166602" duration="166000" />
+      <workItem from="1394405166602" duration="566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28681000" />
+    <option name="totallyTimeSpent" value="29081000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1066,7 +1066,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1384,13 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResultTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="9" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="23" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
@@ -1400,7 +1393,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="5" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.53759396" vertical-offset="0" max-vertical-offset="532">
+        <state line="36" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResultTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="49" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.49624062" vertical-offset="0" max-vertical-offset="638">
           <folding />
         </state>
       </provider>

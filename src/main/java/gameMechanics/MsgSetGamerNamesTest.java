@@ -34,4 +34,5 @@ public class MsgSetGamerNamesTest {
         ms.addService(gameMechanic);
         assertNotNull(gameMechanic.getAddress());
     }
+
 }
