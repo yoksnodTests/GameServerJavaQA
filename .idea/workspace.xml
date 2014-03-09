@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/databaseService/DatabaseServiceImplTest.java" afterPath="$PROJECT_DIR$/src/main/java/databaseService/DatabaseServiceImplTest.java" />
-    </list>
+    <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="" />
     <ignored path="GeoPrj.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +20,7 @@
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__5_.coverage" NAME="All in GameServerJavaQA (5) Coverage Results" MODIFIED="1394402363026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__1_.coverage" NAME="All in GameServerJavaQA (1) Coverage Results" MODIFIED="1394401055155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__2_.coverage" NAME="All in GameServerJavaQA (2) Coverage Results" MODIFIED="1394392867962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA.coverage" NAME="All in GameServerJavaQA Coverage Results" MODIFIED="1394400838274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA.coverage" NAME="All in GameServerJavaQA Coverage Results" MODIFIED="1394403100152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$Main.coverage" NAME="Main Coverage Results" MODIFIED="1394392023582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__4_.coverage" NAME="All in GameServerJavaQA (4) Coverage Results" MODIFIED="1394401407058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__3_.coverage" NAME="All in GameServerJavaQA (3) Coverage Results" MODIFIED="1394400257031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -151,19 +149,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgStartOrStopGameTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MsgStartOrStopGameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="56" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+            <state line="28" column="27" selection-start="879" selection-end="879" vertical-scroll-proportion="0.318264" vertical-offset="0" max-vertical-offset="553">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgVictoryTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MsgVictoryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgVictoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.238698" vertical-offset="0" max-vertical-offset="572">
+            <state line="24" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
               <folding />
             </state>
           </provider>
@@ -257,8 +255,8 @@
         <option value="$PROJECT_DIR$/src/main/java/databaseService/DatabaseServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/GameSessionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResultTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgVictoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java" />
       </list>
     </option>
   </component>
@@ -640,30 +638,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in GameServerJavaQA (5)">
-    <configuration default="false" name="All in GameServerJavaQA (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GameServerJavaQA" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in GameServerJavaQA">
     <configuration default="false" name="All in GameServerJavaQA (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GameServerJavaQA" />
@@ -734,6 +709,29 @@
       <method />
     </configuration>
     <configuration default="false" name="All in GameServerJavaQA (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GameServerJavaQA" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in GameServerJavaQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GameServerJavaQA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1040,19 +1038,19 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.DBServiceTest.insertFriends" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DBServiceTest.createMessanger" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.DBServiceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1092,12 +1090,12 @@
       <workItem from="1394371532665" duration="89000" />
       <workItem from="1394371625901" duration="11410000" />
       <workItem from="1394389969179" duration="4334000" />
-      <workItem from="1394397516099" duration="5466000" />
+      <workItem from="1394397516099" duration="5604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26621000" />
+    <option name="totallyTimeSpent" value="26759000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1120,7 +1118,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1524,16 +1522,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgVictoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+        <state line="24" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgVictoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.238698" vertical-offset="0" max-vertical-offset="572">
+        <state line="28" column="27" selection-start="879" selection-end="879" vertical-scroll-proportion="0.318264" vertical-offset="0" max-vertical-offset="553">
           <folding />
         </state>
       </provider>
