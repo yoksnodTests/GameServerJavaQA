@@ -61,18 +61,19 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
     }
 
 
-    public void getUserId(String userName, Integer sessionId) {
+    public Gamer initGamer(String userName, Integer sessionId) {
         Address address = getAddress();
         address.setThreadUsed(true);
         Session session = sessionFactory.openSession();
         Criteria where = session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
         Gamer testGamer = (Gamer) where.uniqueResult();
-        sendMsg(sessionId, testGamer, userName, session);
+        testGamer = sendMsg(sessionId, testGamer, userName, session);
         session.close();
         address.setThreadUsed(false);
+        return testGamer;
     }
 
-    private void sendMsg(int sessionId, Gamer testGamer, String userName, Session session) {
+    private Gamer sendMsg(int sessionId, Gamer testGamer, String userName, Session session) {
         int id = 0;
         Calendar calendar = null;
         int clicksTopResult = 0;
@@ -83,6 +84,7 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
             Criteria where = session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
             testGamer = (Gamer)where.uniqueResult();
             id = testGamer.getUserId();
+            System.out.println(testGamer.getUserName() + "asdasdsadsadasdas");
         } else {
             clicksTopResult = testGamer.getBestCount();
             calendar = testGamer.getLastDate();
@@ -92,9 +94,11 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
             transaction.commit();
             id = testGamer.getUserId();
         }
+
         Address to = ms.getAddressService().getAddress(FrontendImpl.class);
         Msg newMsg = new MsgUpdateUserId(address, to, id, sessionId, clicksTopResult, calendar);
         ms.sendMessage(newMsg);
+        return testGamer;
     }
 
     public void onSave(Session session, Gamer gamer) {

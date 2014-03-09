@@ -25,7 +25,7 @@ public class MsgGetUserId extends MsgToAccountService {
 
 
     public void exec(AccountService accountService) {
-        accountService.getUserId(userName, sessionId);
+        accountService.initGamer(userName, sessionId);
     }
 
 }

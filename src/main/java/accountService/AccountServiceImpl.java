@@ -3,6 +3,7 @@ package accountService;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import resourceSystem.Resource;
@@ -36,12 +37,13 @@ public class AccountServiceImpl implements AccountService {
         }
     }
 
-    public void getUserId(String userName, Integer sessionId) {
+    public Object initGamer(String userName, Integer sessionId) {
         this.getAddress().setThreadUsed(true);
         if (userId.get(userName) == null){
             userId.put(userName, userIdGenerator.incrementAndGet());
         }
         this.getAddress().setThreadUsed(false);
+        return null;
     }
 
     public Address getAddress() {
