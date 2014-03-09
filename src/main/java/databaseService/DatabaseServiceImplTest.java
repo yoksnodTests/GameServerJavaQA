@@ -53,5 +53,40 @@ public class DatabaseServiceImplTest {
         Assert.assertNotNull(gamer.getUserName());
     }
 
+    @Test
+    public void testGamerName() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
+        ResourceFactory factory = ResourceFactory.getInstance();
+        MessageSystem ms = new MessageSystemImpl();
+        GameMechanic gameMechanic = new GameMechanicImpl(ms,
+                (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(gameMechanic);
+        FrontendImpl frontendImpl = new FrontendImpl(ms,
+                (GameSessionResource) factory.get(DB_RES));
+        ms.addService(frontendImpl);
+        DatabaseServiceImpl databaseServiceImpl = new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RES));
+        Gamer gamer = new Gamer();
+        gamer.setUserName("donskoy");
+        Gamer mockGamer = mock(Gamer.class);
+        when(mockGamer.getUserName()).thenReturn("donskoy");
+        Gamer realGamer = databaseServiceImpl.initGamer(gamer.getUserName(), 282);
+        Assert.assertEquals(mockGamer.getUserName(), realGamer.getUserName());
+    }
+
+    @Test
+    public void testGamerTopResult() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
+        ResourceFactory factory = ResourceFactory.getInstance();
+        MessageSystem ms = new MessageSystemImpl();
+        GameMechanic gameMechanic = new GameMechanicImpl(ms,
+                (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(gameMechanic);
+        FrontendImpl frontendImpl = new FrontendImpl(ms,
+                (GameSessionResource) factory.get(DB_RES));
+        ms.addService(frontendImpl);
+        DatabaseServiceImpl databaseServiceImpl = new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RES));
+        Gamer mockGamer = mock(Gamer.class);
+        when(mockGamer.getBestCount()).thenReturn(-1);
+        Gamer realGamer = databaseServiceImpl.initGamer("donskoy", 100500);
+        Assert.assertNotSame(mockGamer.getBestCount(), realGamer.getBestCount());
+    }
 
 }
