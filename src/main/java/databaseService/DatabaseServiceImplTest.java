@@ -88,5 +88,4 @@ public class DatabaseServiceImplTest {
         Gamer realGamer = databaseServiceImpl.initGamer("donskoy", 100500);
         Assert.assertNotSame(mockGamer.getBestCount(), realGamer.getBestCount());
     }
-
 }
