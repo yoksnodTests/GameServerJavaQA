@@ -25,7 +25,6 @@ public class ReflectionHelper {
 		if ( field.getType().equals(long.class)){
 			field.set(object, Long.decode(value));
 			field.setAccessible(false);
-		//} catch(�){}
 		}
 		
 		

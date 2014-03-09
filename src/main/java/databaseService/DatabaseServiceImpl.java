@@ -67,8 +67,8 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
         Session session = sessionFactory.openSession();
         Criteria where = session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
         Gamer testGamer = (Gamer) where.uniqueResult();
-        session.close();
         sendMsg(sessionId, testGamer, userName, session);
+        session.close();
         address.setThreadUsed(false);
     }
 

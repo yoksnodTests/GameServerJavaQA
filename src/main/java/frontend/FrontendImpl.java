@@ -87,11 +87,13 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
                 ? Integer.valueOf(request.getParameter(URL_GET_PARAM_ID))
                 : null;
 
-        final UserSession session = userSessions.get(id);
+        UserSession session = userSessions.get(id);
         if (name != null && !name.isEmpty() && session == null) {
-            userSession = new UserSession(id);
+            session = new UserSession(id);
+            userSession = session;
             userSession.setUserName(name);
             userSessions.put(userSession.hashCode(), userSession);
+
         }
         if (id != null && !name.isEmpty()) {
             UserSession newSession = userSessions.get(Integer.valueOf(id));
@@ -222,7 +224,7 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
         }
         if (session.getVictory() != null) {
             printWriter.println(TAG + TAG);
-            printWriter.println(userSession.getVictory());
+            printWriter.println(session.getVictory());
         }
     }
 
