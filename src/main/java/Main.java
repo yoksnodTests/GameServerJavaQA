@@ -18,12 +18,19 @@ import frontend.FrontendImpl;
 import gameMechanics.GameMechanic;
 import gameMechanics.GameMechanicImpl;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+
 
 public class Main {
 
     private static final int PORT = 8083;
     private static final String GAME_RESOURCE_FILE_NAME = "GameResource.xml";
     private static final String DB_RESOURCE_FILE_NAME = "DatabaseResource.xml";
+    private static final int SERVICES_POOL_SIZE = 3;
 
     public static void main(String[] args) throws Exception {
 
@@ -34,19 +41,22 @@ public class Main {
         GameMechanic gameMechanic = new GameMechanicImpl(ms, (GameSessionResource) factory.get("GameResource.xml"));
         Server server = new Server(PORT);
 
+        Queue<Runnable> dbServices = new LinkedList<>();
+        DatabaseResource res = (DatabaseResource) factory.get(DB_RESOURCE_FILE_NAME);
+        dbServices.add(new DatabaseServiceImpl(ms, res));
+        dbServices.add(new DatabaseServiceImpl(ms, res));
+        dbServices.add(new DatabaseServiceImpl(ms, res));
 
-        new Thread((FrontendImpl) frontend).start();
-
-        new Thread(new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RESOURCE_FILE_NAME))).start();
-        new Thread(new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RESOURCE_FILE_NAME))).start();
-        new Thread(new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RESOURCE_FILE_NAME))).start();
-        new Thread((GameMechanicImpl) gameMechanic).start();
+        Executors.newSingleThreadExecutor().execute((FrontendImpl) frontend);
+        for (Runnable each : dbServices){
+            Executor executor = Executors.newSingleThreadExecutor();
+            executor.execute(each);
+        }
+        Executors.newSingleThreadExecutor().execute((GameMechanicImpl) gameMechanic);
         server.setHandler((FrontendImpl) frontend);
 
         server.start();
         server.join();
-
-
     }
 
 }
