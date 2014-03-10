@@ -36,4 +36,26 @@ public class GameMechanicImplTest {
         gameMechanic.processMessages(1, 1000);
         Assert.assertTrue(gameMechanic.getSessions().containsKey(1));
     }
+
+    @Test
+    public void testDoGameMechanicStep() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
+        ResourceFactory factory = ResourceFactory.getInstance();
+        MessageSystemImpl ms = new MessageSystemImpl();
+        GameMechanicImpl gameMechanic = new GameMechanicImpl(ms, (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(gameMechanic);
+        FrontendImpl frontendImpl = new FrontendImpl(ms, (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(frontendImpl);
+        List<Integer> userIds = new ArrayList<>();
+        userIds.add(1);
+        userIds.add(2);
+        gameMechanic.setGamerNames(userIds);
+        gameMechanic.getSessions().get(1).setCountClicks(1);
+        gameMechanic.getSessions().get(2).setCountClicks(2);
+        gameMechanic.setAction(true);
+        DatabaseServiceImpl accountServiceImpl = new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RES));
+        ms.addService(accountServiceImpl);
+        gameMechanic.doGameMechanicStep();
+        assertNotNull(ms.getAddressService().getAddress(DatabaseServiceImpl.class));
+    }
+
 }

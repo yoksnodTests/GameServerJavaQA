@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="" />
+    <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java" />
+    </list>
     <ignored path="GeoPrj.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -126,7 +128,7 @@
       <file leaf-file-name="GameMechanicImplTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.12792793" vertical-offset="435" max-vertical-offset="990">
+            <state line="59" column="0" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.9207207" vertical-offset="787" max-vertical-offset="1474">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1040,12 +1042,12 @@
       <workItem from="1394397516099" duration="7083000" />
       <workItem from="1394404882385" duration="113000" />
       <workItem from="1394404999898" duration="164000" />
-      <workItem from="1394405166602" duration="2019000" />
+      <workItem from="1394405166602" duration="2113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30534000" />
+    <option name="totallyTimeSpent" value="30628000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1406,7 +1408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.12792793" vertical-offset="435" max-vertical-offset="990">
+        <state line="59" column="0" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.9207207" vertical-offset="787" max-vertical-offset="1474">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
