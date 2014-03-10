@@ -24,72 +24,10 @@ public class VirtualFileSystemImpl implements VirtualFileSystem {
         return virtualFileSystemImpl;
     }
 
-    public static VirtualFileSystemImpl getInstance(String directory) {
-        if (virtualFileSystemImpl == null){
-            virtualFileSystemImpl = new VirtualFileSystemImpl(directory);
-        }
-        return virtualFileSystemImpl;
-    }
-
-
     private VirtualFileSystemImpl() {
         this.root = System.getProperty("user.dir") + File.separator + "data";
     }
 
-    private VirtualFileSystemImpl(String directory) {
-        this.root = directory;
-    }
-
-    public String getRoot() {
-        return root;
-    }
-
-    @Override
-    public boolean isExist(String path) {
-        this.file = new File(path);
-        if (this.file.exists()) return true;
-        else return false;
-    }
-
-    @Override
-    public boolean isDirectory(String path) {
-        this.file = new File(path);
-        if (file.isDirectory()) return true;
-        else return false;
-    }
-
-    @Override
-    public String getAbsolutePath(String file) {
-        this.file = new File(file);
-        return this.file.getAbsolutePath();
-    }
-
-    @Override
-    public byte[] getBytes(String file) {
-        this.file = new File(file);
-        return file.getBytes();
-
-    }
-
-    @Override
-    public String getUFT8Text(String file) {
-        this.file = new File(file);
-        StringBuilder stringBuilder = new StringBuilder();
-
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader((new FileInputStream(file)), "UTF-8"))) {
-            String buffer;
-            try {
-                while ((buffer = bufferedReader.readLine()) != null) {
-                    stringBuilder.append(buffer);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-        return stringBuilder.toString();
-    }
 
     private class FileIterator implements Iterator<String> {
 
@@ -126,12 +64,4 @@ public class VirtualFileSystemImpl implements VirtualFileSystem {
     public Iterator<String> getIterator(String startDir) {
         return new FileIterator(startDir);
     }
-
-    public void printlnFiles() {
-        Iterator<String> iterator = this.getIterator(File.separator);
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-    }
-
 }

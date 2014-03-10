@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bee761b9-27d1-4565-821c-eceef26464c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/UserSession.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/UserSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java" afterPath="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java" afterPath="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/somefile.txt" afterPath="$PROJECT_DIR$/somefile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeoPrj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,9 +23,9 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__5_.coverage" NAME="All in GameServerJavaQA (5) Coverage Results" MODIFIED="1394410421052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__2_.coverage" NAME="All in GameServerJavaQA (2) Coverage Results" MODIFIED="1394410215335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__1_.coverage" NAME="All in GameServerJavaQA (1) Coverage Results" MODIFIED="1394410100760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__5_.coverage" NAME="All in GameServerJavaQA (5) Coverage Results" MODIFIED="1394411286351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__2_.coverage" NAME="All in GameServerJavaQA (2) Coverage Results" MODIFIED="1394411111368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__1_.coverage" NAME="All in GameServerJavaQA (1) Coverage Results" MODIFIED="1394410909076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA.coverage" NAME="All in GameServerJavaQA Coverage Results" MODIFIED="1394410576851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$Main.coverage" NAME="Main Coverage Results" MODIFIED="1394404359826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GameServerJavaQA$All_in_GameServerJavaQA__4_.coverage" NAME="All in GameServerJavaQA (4) Coverage Results" MODIFIED="1394410515726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -84,7 +87,7 @@
       <file leaf-file-name="FrontendTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="3291" selection-end="3291" vertical-scroll-proportion="0.721519" vertical-offset="1317" max-vertical-offset="1870">
+            <state line="63" column="0" selection-start="2592" selection-end="2592" vertical-scroll-proportion="1.79566" vertical-offset="393" max-vertical-offset="1870">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,16 +98,28 @@
       <file leaf-file-name="UserSession.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/UserSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="11" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1210">
+            <state line="12" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1100">
+              <folding>
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Address.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/base/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameSessionResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/GameSessionResource.java">
+      <file leaf-file-name="AccountServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/accountService/AccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="616">
+            <state line="38" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -113,63 +128,52 @@
       <file leaf-file-name="FrontendImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="0" selection-start="5034" selection-end="5034" vertical-scroll-proportion="0.0" vertical-offset="4529" max-vertical-offset="5082">
+            <state line="124" column="27" selection-start="4682" selection-end="4682" vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="5082">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/DatabaseResource.java">
+      <file leaf-file-name="ReflectionHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="880">
+            <state line="27" column="8" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="880">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgStartOrStopGame.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGame.java">
+      <file leaf-file-name="PageGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/PageGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+            <state line="4" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="2068">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseServiceImplTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/databaseService/DatabaseServiceImplTest.java">
+      <file leaf-file-name="VirtualFileSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="668" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+            <state line="4" column="17" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameMechanicImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImpl.java">
+      <file leaf-file-name="ResourceFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/ResourceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="32" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2068">
+            <state line="37" column="34" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1760">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameMechanicImplTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java">
+      <file leaf-file-name="VirtualFileSystemImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="624" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1914">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgSaveResultTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResultTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="45" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
+            <state line="25" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1452">
               <folding />
             </state>
           </provider>
@@ -193,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/server/gameMechanics/MsgGetRandomMeet.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/frontend/FrontendImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/ResourceSystemTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -221,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/resourceSystem/MyResourceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/resourceSystem/GameSessionResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/resourceSystem/ResourceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/VFSImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImpl.java" />
@@ -241,8 +243,10 @@
         <option value="$PROJECT_DIR$/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/MsgSetGamerNamesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanics/GameMechanicImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frontend/UserSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frontend/UserSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendTest.java" />
       </list>
     </option>
@@ -338,32 +342,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameServerJavaQA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameServerJavaQA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -611,7 +589,53 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in GameServerJavaQA">
+  <component name="RunManager" selected="JUnit.All in GameServerJavaQA (5)">
+    <configuration default="false" name="All in GameServerJavaQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GameServerJavaQA" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in GameServerJavaQA (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GameServerJavaQA" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <method />
+    </configuration>
     <configuration default="false" name="All in GameServerJavaQA (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GameServerJavaQA" />
@@ -659,52 +683,6 @@
       <method />
     </configuration>
     <configuration default="false" name="All in GameServerJavaQA (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GameServerJavaQA" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <ConfigurationWrapper RunnerId="Cover" />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in GameServerJavaQA (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GameServerJavaQA" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <ConfigurationWrapper RunnerId="Cover" />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in GameServerJavaQA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GameServerJavaQA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -990,19 +968,19 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.DBServiceTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DBServiceTest.createMessanger" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.DBServiceTest.insertFriends" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (1)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (4)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (5)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (3)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (2)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in GameServerJavaQA" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1045,12 +1023,12 @@
       <workItem from="1394397516099" duration="7083000" />
       <workItem from="1394404882385" duration="113000" />
       <workItem from="1394404999898" duration="164000" />
-      <workItem from="1394405166602" duration="5601000" />
+      <workItem from="1394405166602" duration="6227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34116000" />
+    <option name="totallyTimeSpent" value="34742000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1140,11 +1118,6 @@
         <state line="48" column="10" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1540" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/PageGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="2068" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858" />
@@ -1190,31 +1163,6 @@
         <state line="2" column="17" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="67" selection-start="3491" selection-end="3491" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="3146" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/ResourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1760" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MessageSystemImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1210" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgUpdateClicks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="8" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
@@ -1223,11 +1171,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgSaveResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/base/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/Msg.java">
@@ -1275,11 +1218,6 @@
         <state line="24" column="1" selection-start="559" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="880" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374" />
@@ -1293,11 +1231,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/databaseService/Gamer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="11" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="1144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/accountService/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/databaseService/DatabaseServiceImpl.java">
@@ -1315,13 +1248,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanics/MsgStartOrStopGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="65" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="968">
           <folding />
         </state>
       </provider>
@@ -1405,23 +1331,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/UserSession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MessageSystemImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="11" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1210">
+        <state line="35" column="42" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="50" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="8" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/PageGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="2068">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/ResourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="34" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourceSystem/VirtualFileSystemImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1452">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="5034" selection-end="5034" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="5082">
+        <state line="124" column="27" selection-start="4682" selection-end="4682" vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="5082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1100">
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/accountService/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3291" selection-end="3291" vertical-scroll-proportion="0.721519" vertical-offset="1317" max-vertical-offset="1870">
+        <state line="63" column="0" selection-start="2592" selection-end="2592" vertical-scroll-proportion="1.79566" vertical-offset="393" max-vertical-offset="1870">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

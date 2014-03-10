@@ -10,7 +10,6 @@ public class UserSession {
 	private Integer sessionId ;
 	private String userName;
 	private Integer userId;
-	private static AtomicInteger sessionIdGenerator = new AtomicInteger();
 	private boolean inProgress = false;
 	private int clicks;
 	private boolean winner;
@@ -18,12 +17,6 @@ public class UserSession {
 	private Calendar lastVisit;
 	private int bestCountClicks;
 
-	
-	
-	
-	public UserSession(){
-		this.sessionId = sessionIdGenerator.incrementAndGet();
-	}
 	public UserSession( int value){
 		this.sessionId = value;
 	}
