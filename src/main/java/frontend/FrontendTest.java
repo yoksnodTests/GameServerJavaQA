@@ -76,4 +76,40 @@ public class FrontendTest {
         writer.flush();
         Assert.assertNotNull(frontendImpl.getUserSessions().get(100500));
     }
+
+
+    @Test
+    public void firstGameFrontend() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException, ServletException{
+        HttpServletRequest request = mock(HttpServletRequest.class);
+        HttpServletResponse response = mock(HttpServletResponse.class);
+        Request baseRequest = mock(Request.class);
+        ResourceFactory factory = ResourceFactory.getInstance();
+        MessageSystem ms = new MessageSystemImpl();
+        GameMechanic gameMechanic = new GameMechanicImpl(ms,
+                (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(gameMechanic);
+        FrontendImpl frontendImpl = new FrontendImpl(ms,
+                (GameSessionResource) factory.get(GAME_RES));
+        ms.addService(frontendImpl);
+        when(request.getParameter("userName")).thenReturn("james");
+        when(request.getParameter("sessionId")).thenReturn("100500");
+        when(request.getParameter("param")).thenReturn("20");
+        Assert.assertNotNull(request.getParameter("param"));
+        PrintWriter writer = new PrintWriter("somefile.txt");
+        when(response.getWriter()).thenReturn(writer);
+        UserSession session = new UserSession(100500);
+        session.setUserId(100500);
+        session.setWinner(false);
+        session.setClicks(10);
+        session.setBestCountClicks(10);
+        session.setVictoryMsg("Winner");
+        frontendImpl.getUserSessions().clear();
+        DatabaseServiceImpl databaseServiceImpl = new DatabaseServiceImpl(ms,(DatabaseResource) factory.get(DB_RES) );
+        ms.addService(databaseServiceImpl);
+        frontendImpl.handle("UTF-8", baseRequest, request, response);
+
+        writer.flush();
+
+        Assert.assertNotNull(frontendImpl.getUserSessions().get(100500));
+    }
 }
