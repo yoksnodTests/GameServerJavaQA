@@ -257,7 +257,7 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
     }
 
     public boolean isGameProcessed() {
-        return this.isGameProcessed;
+        return isGameProcessed;
     }
 
     public void setIsGameProcessed(boolean gameActivity) {

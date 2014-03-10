@@ -5,6 +5,7 @@ import frontend.FrontendImpl;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -34,48 +35,33 @@ public class GameMechanicImplTest {
 
         gameMechanic.getSessions().put(1, new GameSession(1));
         gameMechanic.processMessages(1, 1000);
-        Assert.assertTrue(gameMechanic.getSessions().containsKey(1));
+        Assert.assertTrue(gameMechanic.getSessions().get(1).getCountClicks() == 1000);
     }
 
     @Test
-    public void testDoGameMechanicStep() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
+    public void testContainsMS() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
         ResourceFactory factory = ResourceFactory.getInstance();
-        MessageSystemImpl ms = new MessageSystemImpl();
+        final MessageSystemImpl ms = new MessageSystemImpl();
         GameMechanicImpl gameMechanic = new GameMechanicImpl(ms, (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(gameMechanic);
-        FrontendImpl frontendImpl = new FrontendImpl(ms, (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(frontendImpl);
-        List<Integer> userIds = new ArrayList<>();
-        userIds.add(1);
-        userIds.add(2);
-        gameMechanic.setGamerNames(userIds);
-        gameMechanic.getSessions().get(1).setCountClicks(1);
-        gameMechanic.getSessions().get(2).setCountClicks(2);
-        gameMechanic.setAction(true);
-        DatabaseServiceImpl accountServiceImpl = new DatabaseServiceImpl(ms, (DatabaseResource) factory.get(DB_RES));
-        ms.addService(accountServiceImpl);
-        gameMechanic.doGameMechanicStep();
-        assertNotNull(ms.getAddressService().getAddress(DatabaseServiceImpl.class));
+        assertNotNull(gameMechanic.getMessageSystem());
     }
-
 
     @Test
-    public void testResults() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
+    public void testGameMechanicSessions() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException {
         ResourceFactory factory = ResourceFactory.getInstance();
         MessageSystemImpl ms = new MessageSystemImpl();
         GameMechanicImpl gameMechanic = new GameMechanicImpl(ms, (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(gameMechanic);
-        FrontendImpl frontendImpl = new FrontendImpl(ms, (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(frontendImpl);
-        List<Integer> userIds = new ArrayList<>();
-        userIds.add(1);
-        userIds.add(2);
-        gameMechanic.setGamerNames(userIds);
-        gameMechanic.getSessions().get(1).setCountClicks(1);
-        gameMechanic.getSessions().get(2).setCountClicks(2);
-        final int firstSessionResult = gameMechanic.getSessions().get(1).getCountClicks();
-        final int secondSessionResult = gameMechanic.getSessions().get(2).getCountClicks();
-        Assert.assertTrue(firstSessionResult != secondSessionResult);
+        List<Integer> userIds = prepareList();
+        gameMechanic.initSessions(userIds);
+
+        Map<Integer, GameSession> sessions = gameMechanic.getSessions();
+        assertTrue(sessions.containsKey(1) && sessions.containsKey(2));
     }
 
+    private List<Integer> prepareList(){
+        List<Integer> userIds = new ArrayList();
+        userIds.add(1);
+        userIds.add(2);
+        return userIds;
+    }
 }

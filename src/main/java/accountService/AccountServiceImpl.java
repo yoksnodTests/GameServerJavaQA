@@ -20,7 +20,7 @@ public class AccountServiceImpl implements AccountService {
     private Address address;
     private MessageSystem ms;
     private Resource resource;
-    private static AtomicInteger userIdGenerator = new AtomicInteger();
+    private static final AtomicInteger userIdGenerator = new AtomicInteger();
 
 
     public AccountServiceImpl(MessageSystem ms, Resource resource) {

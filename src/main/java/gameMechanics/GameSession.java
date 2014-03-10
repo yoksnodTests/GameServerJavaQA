@@ -2,15 +2,15 @@ package gameMechanics;
 
 public class GameSession {
 
-    private final int userID;
+    private final int id;
     private int countClicks = 0;
 
-    public GameSession(int userID) {
-        this.userID = userID;
+    public GameSession(int userId) {
+        this.id = userId;
     }
 
     public int hashCode() {
-        return userID;
+        return id;
     }
 
     public int getCountClicks() {

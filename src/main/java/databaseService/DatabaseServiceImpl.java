@@ -22,7 +22,7 @@ import utils.TimeHelper;
 
 public class DatabaseServiceImpl implements AccountService, Runnable {
 
-    private static String TABLE_COLUMN = "userName";
+    public final static String TABLE_COLUMN = "userName";
 
     private Configuration configuration;
     private SessionFactory sessionFactory;
@@ -64,13 +64,21 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
     public Gamer initGamer(String userName, Integer sessionId) {
         Address address = getAddress();
         address.setThreadUsed(true);
-        Session session = sessionFactory.openSession();
-        Criteria where = session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
+        Session session = createNewSession();
+        Criteria where = prepareQuery(session, userName);
         Gamer testGamer = (Gamer) where.uniqueResult();
         testGamer = sendMsg(sessionId, testGamer, userName, session);
         session.close();
         address.setThreadUsed(false);
         return testGamer;
+    }
+
+    public Session createNewSession(){
+        return sessionFactory.openSession();
+    }
+
+    public Criteria prepareQuery(Session session, String userName){
+        return session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
     }
 
     private Gamer sendMsg(int sessionId, Gamer testGamer, String userName, Session session) {
@@ -81,10 +89,9 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
             Gamer newGamer = new Gamer();
             newGamer.setUserName(userName);
             onSave(session, newGamer);
-            Criteria where = session.createCriteria(Gamer.class).add(Restrictions.eq(TABLE_COLUMN, userName));
+            Criteria where = prepareQuery(session, userName);
             testGamer = (Gamer)where.uniqueResult();
             id = testGamer.getUserId();
-            System.out.println(testGamer.getUserName() + "asdasdsadsadasdas");
         } else {
             clicksTopResult = testGamer.getBestCount();
             calendar = testGamer.getLastDate();
@@ -115,7 +122,7 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
     }
 
     public void saveResult(int id, int countClicks) {
-        Session session = sessionFactory.openSession();
+        Session session = createNewSession();
         Gamer gamer = (Gamer) session.load(Gamer.class, id);
         if (gamer.getBestCount() < countClicks) {
             gamer.setBestCount(countClicks);
@@ -128,4 +135,5 @@ public class DatabaseServiceImpl implements AccountService, Runnable {
         session.close();
 
     }
+
 }

@@ -22,7 +22,7 @@ public class MsgSetGamerNames extends MsgToGameMechanic {
     }
 
     public void exec(GameMechanic gameMechanic) {
-        gameMechanic.setGamerNames(usersId);
+        gameMechanic.sendStartGameMsg(usersId);
     }
 
 }

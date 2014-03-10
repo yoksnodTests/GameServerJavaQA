@@ -1,5 +1,7 @@
 package resourceSystem;
 
+import com.google.inject.Inject;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,6 +26,7 @@ public class VirtualFileSystemImpl implements VirtualFileSystem {
         return virtualFileSystemImpl;
     }
 
+    @Inject
     private VirtualFileSystemImpl() {
         this.root = System.getProperty("user.dir") + File.separator + "data";
     }
@@ -31,7 +34,7 @@ public class VirtualFileSystemImpl implements VirtualFileSystem {
 
     private class FileIterator implements Iterator<String> {
 
-        private Queue<File> files = new LinkedList<File>();
+        private Queue<File> files = new LinkedList();
 
         public FileIterator(String path) {
             files.add(new File(root + path));

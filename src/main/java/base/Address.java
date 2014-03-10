@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Address {
-    private static AtomicInteger subscriberIdGenerator = new AtomicInteger();
+    private static final AtomicInteger subscriberIdGenerator = new AtomicInteger();
     private AtomicBoolean threadUsed = new AtomicBoolean();
     private final int subscriberId;
 

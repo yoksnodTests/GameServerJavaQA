@@ -1,6 +1,7 @@
 package frontend;
 
 import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
 import databaseService.DatabaseServiceImpl;
@@ -36,47 +37,49 @@ public class FrontendTest {
     private static final String DB_RES = "DatabaseResource.xml";
 
     @Test
-    public void testServlets() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException, ServletException {
+    public void testStartGame() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException, ServletException {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class);
-        Request baseRequest = mock(Request.class);
         ResourceFactory factory = ResourceFactory.getInstance();
         MessageSystem ms = new MessageSystemImpl();
-        GameMechanic gameMechanic = new GameMechanicImpl(ms,
-                (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(gameMechanic);
         FrontendImpl frontendImpl = new FrontendImpl(ms,
                 (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(frontendImpl);
         when(request.getParameter("userName")).thenReturn("donskoy");
         when(request.getParameter("sessionId")).thenReturn("100500");
         when(request.getParameter("param")).thenReturn("20");
-        assertNotNull(request.getParameter("param"));
+
         PrintWriter writer = new PrintWriter("somefile.txt");
         when(response.getWriter()).thenReturn(writer);
         UserSession session = new UserSession(100500);
+        prepareWinnerSession(session);
+
+        frontendImpl.getUserSessions().put(100500, session);
+		frontendImpl.setResult(1, 1000, "winner");
+		frontendImpl.onStop(request, response);
+		frontendImpl.onStart(request, response);
+        writer.flush();
+        assertNotNull(frontendImpl.getUserSessions().get(100500));
+    }
+
+    @Test
+    public void testIsSessionProcessed()throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException, ServletException {
+        ResourceFactory factory = ResourceFactory.getInstance();
+        MessageSystem ms = new MessageSystemImpl();
+        FrontendImpl frontendImpl = new FrontendImpl(ms,
+                (GameSessionResource) factory.get(GAME_RES));
+        frontendImpl.setIsGameProcessed(true);
+        assertTrue(frontendImpl.isGameProcessed());
+
+    }
+
+    private void prepareWinnerSession(UserSession session){
         session.setUserId(100500);
         session.setWinner(false);
         session.setClicks(10);
         session.setBestCountClicks(10);
         session.setVictoryMsg("Winner");
         session.setLastVisit(Calendar.getInstance());
-
-
-        DatabaseServiceImpl databaseServiceImpl = new DatabaseServiceImpl(ms,(DatabaseResource) factory.get("DatabaseResour�e.xml") );
-        ms.addService(databaseServiceImpl);
-        frontendImpl.getUserSessions().put(100500, session);
-		frontendImpl.updateUserId(100500, 100501, 120, Calendar.getInstance());
-		frontendImpl.handle("UTF-8", baseRequest, request, response);
-		frontendImpl.onHandle(request, response);
-		frontendImpl.setIsGameProcessed(true);
-		frontendImpl.setResult(1, 1000, "winner");
-		frontendImpl.onStop(request, response);
-		frontendImpl.onStart(request, response);
-        writer.flush();
-        Assert.assertNotNull(frontendImpl.getUserSessions().get(100500));
     }
-
 
     @Test
     public void firstGameFrontend() throws InstantiationException, IllegalAccessException, ClassNotFoundException, DOMException, NoSuchFieldException, SecurityException, IllegalArgumentException, ParserConfigurationException, SAXException, IOException, ServletException{
@@ -85,31 +88,20 @@ public class FrontendTest {
         Request baseRequest = mock(Request.class);
         ResourceFactory factory = ResourceFactory.getInstance();
         MessageSystem ms = new MessageSystemImpl();
-        GameMechanic gameMechanic = new GameMechanicImpl(ms,
-                (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(gameMechanic);
         FrontendImpl frontendImpl = new FrontendImpl(ms,
                 (GameSessionResource) factory.get(GAME_RES));
-        ms.addService(frontendImpl);
         when(request.getParameter("userName")).thenReturn("james");
         when(request.getParameter("sessionId")).thenReturn("100500");
         when(request.getParameter("param")).thenReturn("20");
-        Assert.assertNotNull(request.getParameter("param"));
         PrintWriter writer = new PrintWriter("somefile.txt");
         when(response.getWriter()).thenReturn(writer);
         UserSession session = new UserSession(100500);
-        session.setUserId(100500);
-        session.setWinner(false);
-        session.setClicks(10);
-        session.setBestCountClicks(10);
-        session.setVictoryMsg("Winner");
+        prepareWinnerSession(session);
         frontendImpl.getUserSessions().clear();
-        DatabaseServiceImpl databaseServiceImpl = new DatabaseServiceImpl(ms,(DatabaseResource) factory.get(DB_RES) );
-        ms.addService(databaseServiceImpl);
         frontendImpl.handle("UTF-8", baseRequest, request, response);
-
         writer.flush();
-
-        Assert.assertNotNull(frontendImpl.getUserSessions().get(100500));
+        assertNotNull(frontendImpl.getUserSessions().get(100500));
     }
+
+
 }

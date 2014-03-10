@@ -5,7 +5,7 @@ import java.util.List;
 import base.Abonent;
 
 public interface GameMechanic extends Abonent {
-    void setGamerNames(List<Integer> userIds);
+    void sendStartGameMsg(List<Integer> userIds);
 
     void processMessages(int userId, int countClicks);
 }
