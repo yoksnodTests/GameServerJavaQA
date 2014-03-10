@@ -95,7 +95,7 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
             userSessions.put(userSession.hashCode(), userSession);
 
         }
-        if (id != null && !name.isEmpty()) {
+        if (id != null && name != null && !name.isEmpty()) {
             UserSession newSession = userSessions.get(Integer.valueOf(id));
             userId = newSession.getUserId();
         }
@@ -222,9 +222,9 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
                         DOING + each.getClicks() + CLICKS);
             }
         }
-        if (session.getVictory() != null) {
+        if (session.getVictoryMsg() != null) {
             printWriter.println(TAG + TAG);
-            printWriter.println(session.getVictory());
+            printWriter.println(session.getVictoryMsg());
         }
     }
 
@@ -233,7 +233,7 @@ public class FrontendImpl extends AbstractHandler implements Runnable, Frontend 
 
         for (UserSession userSession : userSessions.values()) {
             if (userSession.getUserId() == userId) {
-                userSession.setVictory(victoryMessage);
+                userSession.setVictoryMsg(victoryMessage);
                 userSession.setWinner(true);
             }
 

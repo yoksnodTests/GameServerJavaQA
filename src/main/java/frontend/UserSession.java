@@ -8,13 +8,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class UserSession {
 	
 	private Integer sessionId ;
-	private String UserName;
-	private Integer UserId;
+	private String userName;
+	private Integer userId;
 	private static AtomicInteger sessionIdGenerator = new AtomicInteger();
 	private boolean inProgress = false;
 	private int clicks;
 	private boolean winner;
-	private String victory;
+	private String victoryMsg;
 	private Calendar lastVisit;
 	private int bestCountClicks;
 
@@ -32,16 +32,16 @@ public class UserSession {
 	}
 	
 	public String getUserName() {
-		return UserName;
+		return userName;
 	}
 	public void setUserName(String userName) {
-		this.UserName = userName;
+		this.userName = userName;
 	}
 	public Integer getUserId() {
-		return UserId;
+		return userId;
 	}
 	public void setUserId(int userId) {
-		this.UserId = userId;
+		this.userId = userId;
 	}
 	public boolean isInProgress() {
 		return inProgress;
@@ -61,11 +61,11 @@ public class UserSession {
 	public void setWinner(boolean winner) {
 		this.winner = winner;
 	}
-	public String getVictory() {
-		return victory;
+	public String getVictoryMsg() {
+		return victoryMsg;
 	}
-	public void setVictory(String victory) {
-		this.victory = victory;
+	public void setVictoryMsg(String victoryMsg) {
+		this.victoryMsg = victoryMsg;
 	}
 	public Calendar getLastVisit() {
 		return lastVisit;
